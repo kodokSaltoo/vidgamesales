@@ -24,7 +24,7 @@ def main():
     st.title("Video Game Sales Analysis")
     
     # Membaca data langsung dari folder data
-    file_name = "vgsales.csv"  # Nama file CSV Anda
+    file_name = "vgsales.csv"  # Nama file CSV
     data = load_data(file_name)
     
     if data is not None:
