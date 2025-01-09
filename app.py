@@ -51,6 +51,8 @@ def main():
                 st.error(f"Kolom yang diperlukan tidak ditemukan dalam dataset: {e}")
             except Exception as e:
                 st.error(f"Terjadi kesalahan saat prediksi: {e}")
+            with open('models/model.pkl', 'wb') as f:
+                pickle.dump(model, f)
     
 if __name__ == "__main__":
     main()
