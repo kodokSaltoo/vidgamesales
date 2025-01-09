@@ -5,8 +5,6 @@ from scripts.preprocess import load_and_preprocess_data
 
 # Load model
 def load_model():
-    with open('models/model.pkl', 'wb') as f:
-        pickle.dump(model, f)
     with open('models/model.pkl', 'rb') as f:
         model = pickle.load(f)
     return model
